@@ -6,6 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-27 14:25+0000\n"
+"PO-Revision-Date: 2022-10-27 14:25+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -340,10 +342,13 @@ msgstr ""
 #. module: mis_builder
 #: code:addons/mis_builder/models/mis_report.py:0
 #: code:addons/mis_builder/models/mis_report.py:0
-#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__accumulation_method__avg
-#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_query__aggregate__avg
 #, python-format
 msgid "Average"
+msgstr ""
+
+#. module: mis_builder
+#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__type__y
+msgid "Año"
 msgstr ""
 
 #. module: mis_builder
@@ -369,6 +374,11 @@ msgstr ""
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__font_weight__bold
 msgid "Bold"
+msgstr ""
+
+#. module: mis_builder
+#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__type__str
+msgid "Cadena"
 msgstr ""
 
 #. module: mis_builder
@@ -522,7 +532,6 @@ msgstr ""
 #: code:addons/mis_builder/models/mis_report_instance.py:0
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__date_range_id
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__date_range_id
-#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__type__date_range
 #, python-format
 msgid "Date Range"
 msgstr ""
@@ -544,7 +553,6 @@ msgstr ""
 
 #. module: mis_builder
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__type__d
 #, python-format
 msgid "Day"
 msgstr ""
@@ -565,8 +573,12 @@ msgid ""
 msgstr ""
 
 #. module: mis_builder
-#: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__compare_method__diff
+msgid "Diferencia"
+msgstr ""
+
+#. module: mis_builder
+#: code:addons/mis_builder/models/mis_report.py:0
 #, python-format
 msgid "Difference"
 msgstr ""
@@ -630,6 +642,11 @@ msgstr ""
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__duration
 msgid "Duration"
+msgstr ""
+
+#. module: mis_builder
+#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__type__d
+msgid "Día"
 msgstr ""
 
 #. module: mis_builder
@@ -1112,14 +1129,17 @@ msgstr ""
 
 #. module: mis_builder
 #: code:addons/mis_builder/models/mis_report.py:0
-#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_query__aggregate__max
 #, python-format
 msgid "Max"
 msgstr ""
 
 #. module: mis_builder
+#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__type__m
+msgid "Mes"
+msgstr ""
+
+#. module: mis_builder
 #: code:addons/mis_builder/models/mis_report.py:0
-#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_query__aggregate__min
 #, python-format
 msgid "Min"
 msgstr ""
@@ -1136,7 +1156,6 @@ msgstr ""
 
 #. module: mis_builder
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__type__m
 #, python-format
 msgid "Month"
 msgstr ""
@@ -1167,6 +1186,16 @@ msgid "Multiple companies"
 msgstr ""
 
 #. module: mis_builder
+#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_query__aggregate__max
+msgid "Máx"
+msgstr ""
+
+#. module: mis_builder
+#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_query__aggregate__min
+msgid "Mín"
+msgstr ""
+
+#. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_add_mis_report_instance_dashboard_wizard__name
 #: model:ir.model.fields,field_description:mis_builder.field_mis_kpi_data__name
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__name
@@ -1178,6 +1207,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_period_view_form
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_form
 msgid "Name"
+msgstr ""
+
+#. module: mis_builder
+#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__accumulation_method__none
+#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__compare_method__none
+msgid "Ninguno"
 msgstr ""
 
 #. module: mis_builder
@@ -1194,8 +1229,6 @@ msgstr ""
 #. module: mis_builder
 #: code:addons/mis_builder/models/mis_report.py:0
 #: code:addons/mis_builder/models/mis_report.py:0
-#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__accumulation_method__none
-#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__compare_method__none
 #, python-format
 msgid "None"
 msgstr ""
@@ -1218,9 +1251,13 @@ msgstr ""
 
 #. module: mis_builder
 #: code:addons/mis_builder/models/mis_report.py:0
-#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__type__num
 #, python-format
 msgid "Numeric"
+msgstr ""
+
+#. module: mis_builder
+#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__type__num
+msgid "Numérico"
 msgstr ""
 
 #. module: mis_builder
@@ -1241,8 +1278,6 @@ msgstr ""
 #. module: mis_builder
 #: code:addons/mis_builder/models/mis_report.py:0
 #: code:addons/mis_builder/models/mis_report.py:0
-#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__compare_method__pct
-#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__type__pct
 #, python-format
 msgid "Percentage"
 msgstr ""
@@ -1274,6 +1309,12 @@ msgid "Please provide both columns to compare in %s."
 msgstr ""
 
 #. module: mis_builder
+#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__compare_method__pct
+#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__type__pct
+msgid "Porcentaje"
+msgstr ""
+
+#. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__prefix
 msgid "Prefix"
 msgstr ""
@@ -1301,6 +1342,12 @@ msgid "Print"
 msgstr ""
 
 #. module: mis_builder
+#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__accumulation_method__avg
+#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_query__aggregate__avg
+msgid "Promedio"
+msgstr ""
+
+#. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__query_ids
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_form
 msgid "Queries"
@@ -1310,6 +1357,11 @@ msgstr ""
 #: code:addons/mis_builder/models/mis_report.py:0
 #, python-format
 msgid "Query name ({}) must be valid python identifier"
+msgstr ""
+
+#. module: mis_builder
+#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__type__date_range
+msgid "Rango de fechas"
 msgstr ""
 
 #. module: mis_builder
@@ -1378,6 +1430,11 @@ msgid ""
 msgstr ""
 
 #. module: mis_builder
+#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__type__w
+msgid "Semana"
+msgstr ""
+
+#. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__sequence
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi__sequence
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi_expression__sequence
@@ -1412,7 +1469,6 @@ msgstr ""
 
 #. module: mis_builder
 #: code:addons/mis_builder/models/mis_report.py:0
-#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__type__str
 #, python-format
 msgid "String"
 msgstr ""
@@ -1520,8 +1576,6 @@ msgstr ""
 #. module: mis_builder
 #: code:addons/mis_builder/models/mis_report.py:0
 #: code:addons/mis_builder/models/mis_report.py:0
-#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__accumulation_method__sum
-#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_query__aggregate__sum
 #, python-format
 msgid "Sum"
 msgstr ""
@@ -1542,6 +1596,12 @@ msgstr ""
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__source__sumcol
 msgid "Sum columns"
+msgstr ""
+
+#. module: mis_builder
+#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__accumulation_method__sum
+#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_query__aggregate__sum
+msgid "Suma"
 msgstr ""
 
 #. module: mis_builder
@@ -1653,7 +1713,6 @@ msgstr ""
 
 #. module: mis_builder
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__type__w
 #, python-format
 msgid "Week"
 msgstr ""
@@ -1670,7 +1729,6 @@ msgstr ""
 
 #. module: mis_builder
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__type__y
 #, python-format
 msgid "Year"
 msgstr ""

@@ -8,34 +8,37 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-13 15:37+0000\n"
-"PO-Revision-Date: 2020-07-27 10:19+0000\n"
+"POT-Creation-Date: 2022-10-27 14:26+0000\n"
+"PO-Revision-Date: 2022-10-27 16:43+0200\n"
 "Last-Translator: Daniel Martinez Vila <daniel.martinez@qubiq.es>\n"
 "Language-Team: Spanish (https://www.transifex.com/oca/teams/23907/es/)\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.10\n"
+"X-Generator: Poedit 3.1.1\n"
+
+#. module: mis_builder_budget
+#: code:addons/mis_builder_budget/models/mis_budget_item_abstract.py:0
+#, python-format
+msgid "%(rec_name)s is not within budget %(budget_name)s date range."
+msgstr ""
+"%(rec_name)sno está dentro del rango de fechas del presupuesto "
+"%(budget_name)s"
+
+#. module: mis_builder_budget
+#: code:addons/mis_builder_budget/models/mis_budget_item_abstract.py:0
+#, python-format
+msgid "%(rec_name)s overlaps %(res_name)s in budget %(budget_name)s"
+msgstr ""
+"%(rec_name)s se superpone %(res_name)s en el presupuesto %(budget_name)s"
 
 #. module: mis_builder_budget
 #: code:addons/mis_builder_budget/models/mis_budget_abstract.py:0
 #, python-format
 msgid "%s (copy)"
 msgstr "%s(copia)"
-
-#. module: mis_builder_budget
-#: code:addons/mis_builder_budget/models/mis_budget_item_abstract.py:0
-#, python-format
-msgid "%s is not within budget %s date range."
-msgstr "%s no está dentro del rango de fechas del presupuesto %s."
-
-#. module: mis_builder_budget
-#: code:addons/mis_builder_budget/models/mis_budget_item_abstract.py:0
-#, python-format
-msgid "%s overlaps %s in budget %s"
-msgstr "%s superpone %s en el presupuesto %s"
 
 #. module: mis_builder_budget
 #: code:addons/mis_builder_budget/models/mis_budget_item_abstract.py:0
@@ -73,8 +76,9 @@ msgstr ""
 
 #. module: mis_builder_budget
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__allow_items_overlap
+#, fuzzy
 msgid "Allow Items Overlap"
-msgstr ""
+msgstr "Permitir superposición de elementos"
 
 #. module: mis_builder_budget
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__amount
@@ -238,15 +242,9 @@ msgstr "Descripción"
 
 #. module: mis_builder_budget
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__display_name
-#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__display_name
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__display_name
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__display_name
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__display_name
-#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item_abstract__display_name
-#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_report_instance__display_name
-#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_report_instance_period__display_name
-#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_report_kpi__display_name
-#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_report_kpi_expression__display_name
 msgid "Display Name"
 msgstr "Nombre mostrado"
 
@@ -273,13 +271,6 @@ msgid "Followers"
 msgstr "Seguidores"
 
 #. module: mis_builder_budget
-#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__message_channel_ids
-#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__message_channel_ids
-#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__message_channel_ids
-msgid "Followers (Channels)"
-msgstr "Seguidores (Canales)"
-
-#. module: mis_builder_budget
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__message_partner_ids
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__message_partner_ids
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__message_partner_ids
@@ -297,16 +288,19 @@ msgid "From"
 msgstr "Desde"
 
 #. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__has_message
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__has_message
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__has_message
+#, fuzzy
+#| msgid "Messages"
+msgid "Has Message"
+msgstr "Tienes mensajes"
+
+#. module: mis_builder_budget
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__id
-#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__id
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__id
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__id
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__id
-#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item_abstract__id
-#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_report_instance__id
-#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_report_instance_period__id
-#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_report_kpi__id
-#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_report_kpi_expression__id
 msgid "ID"
 msgstr "ID"
 
@@ -322,8 +316,11 @@ msgstr "Si está marcado, los nuevos mensajes requieren su atención."
 
 #. module: mis_builder_budget
 #: model:ir.model.fields,help:mis_builder_budget.field_mis_budget_by_account__allow_items_overlap
+#, fuzzy
 msgid "If checked, overlap between budget items is allowed"
 msgstr ""
+"Si está marcada, se permite la superposición entre las partidas "
+"presupuestarias"
 
 #. module: mis_builder_budget
 #: model:ir.model.fields,help:mis_builder_budget.field_mis_budget__message_has_error
@@ -360,20 +357,15 @@ msgstr "KPI de Secuencia"
 
 #. module: mis_builder_budget
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__name
+#, fuzzy
 msgid "Label"
-msgstr ""
+msgstr "Etiqueta"
 
 #. module: mis_builder_budget
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget____last_update
-#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract____last_update
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account____last_update
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item____last_update
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item____last_update
-#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item_abstract____last_update
-#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_report_instance____last_update
-#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_report_instance_period____last_update
-#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_report_kpi____last_update
-#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_report_kpi_expression____last_update
 msgid "Last Modified on"
 msgstr "Última modificación en"
 
@@ -626,6 +618,9 @@ msgid ""
 msgstr ""
 "¡Valor de crédito o débito incorrecto en la partida presupuestaria! El "
 "crédito o débito debe ser cero."
+
+#~ msgid "Followers (Channels)"
+#~ msgstr "Seguidores (Canales)"
 
 #~ msgid "MIS Budget"
 #~ msgstr "Presupuesto MIS"
